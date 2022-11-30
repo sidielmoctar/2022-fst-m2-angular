@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ProgressService} from "./progress.service";
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,11 @@ export class AppComponent implements OnInit{
   title = 'exosAngular';
   msgSuccess = "Opération Ok";
 
-  curPercentage = 0;
-  sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+  constructor(public progressService: ProgressService) {
+  }
 
   async ngOnInit() {
-    while (this.curPercentage < 100) {
-      await this.sleep(1000);
-      this.curPercentage = this.curPercentage + 10;
-    }
+    this.progressService.checkPercentage()
   }
 }
