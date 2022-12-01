@@ -17,6 +17,7 @@ import {NgbModule, NgbProgressbarConfig, NgbProgressbarModule} from '@ng-bootstr
 import { NgProgressExempleComponent } from './ng-progress-exemple/ng-progress-exemple.component';
 import { NgTimePickerExempleComponent } from './ng-time-picker-exemple/ng-time-picker-exemple.component';
 import { NgAccordionExempleComponent } from './ng-accordion-exemple/ng-accordion-exemple.component';
+import { NgPaginationExempleComponent } from './ng-pagination-exemple/ng-pagination-exemple.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { NgAccordionExempleComponent } from './ng-accordion-exemple/ng-accordion
     ProgressComponent,
     SnackBarExempleComponent,
     SnackBarContentExempleComponent,
-    NgProgressExempleComponent,
+    NgProgressExempleComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,8 @@ import { NgAccordionExempleComponent } from './ng-accordion-exemple/ng-accordion
     NgbModule,
     NgbProgressbarModule,
     NgTimePickerExempleComponent,
-    NgAccordionExempleComponent
+    NgAccordionExempleComponent,
+    NgPaginationExempleComponent
   ],
   providers: [
     ProgressService,
