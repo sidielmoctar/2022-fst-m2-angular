@@ -11,13 +11,17 @@ import { ProgressComponent } from './progress/progress.component';
 import {ProgressService} from "./progress.service";
 import {MaterialModule} from "./material/material.module";
 import {ReactiveFormsModule} from "@angular/forms";
+import { SnackBarExempleComponent } from './snack-bar-exemple/snack-bar-exemple.component';
+import { SnackBarContentExempleComponent } from './snack-bar-content-exemple/snack-bar-content-exemple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlertSuccessComponent,
     AlertDangerComponent,
-    ProgressComponent
+    ProgressComponent,
+    SnackBarExempleComponent,
+    SnackBarContentExempleComponent
   ],
   imports: [
     BrowserModule,
