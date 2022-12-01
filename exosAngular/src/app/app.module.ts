@@ -16,6 +16,7 @@ import { SnackBarContentExempleComponent } from './snack-bar-content-exemple/sna
 import {NgbModule, NgbProgressbarConfig, NgbProgressbarModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgProgressExempleComponent } from './ng-progress-exemple/ng-progress-exemple.component';
 import { NgTimePickerExempleComponent } from './ng-time-picker-exemple/ng-time-picker-exemple.component';
+import { NgAccordionExempleComponent } from './ng-accordion-exemple/ng-accordion-exemple.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { NgTimePickerExempleComponent } from './ng-time-picker-exemple/ng-time-p
     ProgressComponent,
     SnackBarExempleComponent,
     SnackBarContentExempleComponent,
-    NgProgressExempleComponent
+    NgProgressExempleComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,8 @@ import { NgTimePickerExempleComponent } from './ng-time-picker-exemple/ng-time-p
     ReactiveFormsModule,
     NgbModule,
     NgbProgressbarModule,
-    NgTimePickerExempleComponent
+    NgTimePickerExempleComponent,
+    NgAccordionExempleComponent
   ],
   providers: [
     ProgressService,
