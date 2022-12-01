@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProgressService} from "./progress.service";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import {ProgressService} from "./progress.service";
 export class AppComponent implements OnInit{
   title = 'exosAngular';
   msgSuccess = "Opération Ok";
-
+  range = new FormGroup({
+    start: new FormControl<Date | null>(null),
+    end: new FormControl<Date | null>(null),
+  });
 
   constructor(public progressService: ProgressService) {
   }

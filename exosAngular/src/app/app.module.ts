@@ -9,6 +9,8 @@ import { AlertSuccessComponent } from './alert-success/alert-success.component';
 import { AlertDangerComponent } from './alert-danger/alert-danger.component';
 import { ProgressComponent } from './progress/progress.component';
 import {ProgressService} from "./progress.service";
+import {MaterialModule} from "./material/material.module";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {ProgressService} from "./progress.service";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [
     ProgressService
