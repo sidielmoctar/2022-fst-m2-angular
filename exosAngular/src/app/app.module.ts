@@ -13,6 +13,7 @@ import {MaterialModule} from "./material/material.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import { SnackBarExempleComponent } from './snack-bar-exemple/snack-bar-exemple.component';
 import { SnackBarContentExempleComponent } from './snack-bar-content-exemple/snack-bar-content-exemple.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SnackBarContentExempleComponent } from './snack-bar-content-exemple/sna
     BrowserAnimationsModule,
     MatCardModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [
     ProgressService
