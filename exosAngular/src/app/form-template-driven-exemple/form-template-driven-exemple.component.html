@@ -1,0 +1,29 @@
+<mat-card>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <form ngForm (submit)="save()" >
+        <div class="row">
+          Login
+          <input type="text" [(ngModel)]="user.login" name="login">
+        </div>
+        <div class="row">
+          Nom
+          <input type="text" [(ngModel)]="user.nom"  name="nom">
+        </div>
+        <div class="row">
+          Email
+          <input type="email" [(ngModel)]="user.email"  name="email">
+        </div>
+        <div class="row mb-2">
+          Mot de passe
+          <input type="text" [(ngModel)]="user.password"  name="pass">
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" type="submit">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</mat-card>

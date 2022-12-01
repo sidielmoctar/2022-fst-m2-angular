@@ -10,7 +10,7 @@ import { AlertDangerComponent } from './alert-danger/alert-danger.component';
 import { ProgressComponent } from './progress/progress.component';
 import {ProgressService} from "./progress.service";
 import {MaterialModule} from "./material/material.module";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { SnackBarExempleComponent } from './snack-bar-exemple/snack-bar-exemple.component';
 import { SnackBarContentExempleComponent } from './snack-bar-content-exemple/snack-bar-content-exemple.component';
 import {NgbModule, NgbProgressbarConfig, NgbProgressbarModule} from '@ng-bootstrap/ng-bootstrap';
@@ -18,6 +18,7 @@ import { NgProgressExempleComponent } from './ng-progress-exemple/ng-progress-ex
 import { NgTimePickerExempleComponent } from './ng-time-picker-exemple/ng-time-picker-exemple.component';
 import { NgAccordionExempleComponent } from './ng-accordion-exemple/ng-accordion-exemple.component';
 import { NgPaginationExempleComponent } from './ng-pagination-exemple/ng-pagination-exemple.component';
+import { FormTemplateDrivenExempleComponent } from './form-template-driven-exemple/form-template-driven-exemple.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NgPaginationExempleComponent } from './ng-pagination-exemple/ng-paginat
     ProgressComponent,
     SnackBarExempleComponent,
     SnackBarContentExempleComponent,
-    NgProgressExempleComponent
+    NgProgressExempleComponent,
+    FormTemplateDrivenExempleComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { NgPaginationExempleComponent } from './ng-pagination-exemple/ng-paginat
     NgbProgressbarModule,
     NgTimePickerExempleComponent,
     NgAccordionExempleComponent,
-    NgPaginationExempleComponent
+    NgPaginationExempleComponent,
+    FormsModule
   ],
   providers: [
     ProgressService,
