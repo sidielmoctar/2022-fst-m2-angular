@@ -13,7 +13,8 @@ import {MaterialModule} from "./material/material.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import { SnackBarExempleComponent } from './snack-bar-exemple/snack-bar-exemple.component';
 import { SnackBarContentExempleComponent } from './snack-bar-content-exemple/snack-bar-content-exemple.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule, NgbProgressbarConfig, NgbProgressbarModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgProgressExempleComponent } from './ng-progress-exemple/ng-progress-exemple.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AlertDangerComponent,
     ProgressComponent,
     SnackBarExempleComponent,
-    SnackBarContentExempleComponent
+    SnackBarContentExempleComponent,
+    NgProgressExempleComponent
   ],
   imports: [
     BrowserModule,
@@ -31,10 +33,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatCardModule,
     MaterialModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    NgbProgressbarModule
   ],
   providers: [
-    ProgressService
+    ProgressService,
+    NgbProgressbarConfig
   ],
   bootstrap: [AppComponent]
 })
