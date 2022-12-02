@@ -10,7 +10,7 @@
           <th>Nom</th>
           <th>Email</th>
         </tr>
-        <tr appHighlight *ngFor="let user of users">
+        <tr appHighlight *ngFor="let user of users | userAdmin">
           <td>{{user.username}}</td>
           <td>{{user.first_name}}</td>
           <td>{{user.last_name}}</td>
