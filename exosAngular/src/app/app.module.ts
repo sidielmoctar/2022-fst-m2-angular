@@ -23,6 +23,7 @@ import { ReactiveFormExempleComponent } from './reactive-form-exemple/reactive-f
 import { UserListComponent } from './user-list/user-list.component';
 import {UserService} from "./user.service";
 import {HttpClientModule} from "@angular/common/http";
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {HttpClientModule} from "@angular/common/http";
     NgProgressExempleComponent,
     FormTemplateDrivenExempleComponent,
     ReactiveFormExempleComponent,
-    UserListComponent
+    UserListComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
