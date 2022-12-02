@@ -19,6 +19,10 @@ import { NgTimePickerExempleComponent } from './ng-time-picker-exemple/ng-time-p
 import { NgAccordionExempleComponent } from './ng-accordion-exemple/ng-accordion-exemple.component';
 import { NgPaginationExempleComponent } from './ng-pagination-exemple/ng-pagination-exemple.component';
 import { FormTemplateDrivenExempleComponent } from './form-template-driven-exemple/form-template-driven-exemple.component';
+import { ReactiveFormExempleComponent } from './reactive-form-exemple/reactive-form-exemple.component';
+import { UserListComponent } from './user-list/user-list.component';
+import {UserService} from "./user.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { FormTemplateDrivenExempleComponent } from './form-template-driven-exemp
     SnackBarExempleComponent,
     SnackBarContentExempleComponent,
     NgProgressExempleComponent,
-    FormTemplateDrivenExempleComponent
+    FormTemplateDrivenExempleComponent,
+    ReactiveFormExempleComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
@@ -43,11 +49,13 @@ import { FormTemplateDrivenExempleComponent } from './form-template-driven-exemp
     NgTimePickerExempleComponent,
     NgAccordionExempleComponent,
     NgPaginationExempleComponent,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     ProgressService,
-    NgbProgressbarConfig
+    NgbProgressbarConfig,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
